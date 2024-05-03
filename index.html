@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Landing Page</title>
+  <script>
+    function redirect() {
+      if (window.location.href.includes('home.html')) {
+        setTimeout(function() {
+          window.location.href = "index.html";
+        }, 3000);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header> 
+    <a href="home.html" onclick="redirect()">
+      <h1>Landing Page</h1>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <section class="main-section">
+    <h2>Welcome to our Superb Product</h2>
+    <p>Explore the incredible features that will transform your experience!</p>
+    <a href="#" class="action-button">Explore Now</a>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2023 Your Company. All rights reserved.<br>
+      Web Development project
+    </p>
+  </footer>
+</body>
+</html>
